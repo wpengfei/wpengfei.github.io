@@ -8,9 +8,8 @@
 <body>
 <h1><img src="王鹏飞.jpg" alt="" name="imgPlaceHolder" width="308" height="346" id="imgPlaceHolder" align="texttop" /></h1>
 <h1><strong>Pengfei Wang (王鹏飞)</strong></h1>
-<p> Ph.D student </p>
-<p>College of Computer</p>
-<p>National University of Defense Technology (NUDT), China.</p>
+<p> Ph.D. student </p>
+<p>College of Computer, National University of Defense Technology (NUDT), China.</p>
 <h2><br />
 Contact：</h2>
 <ul>
@@ -26,36 +25,65 @@ Contact：</h2>
 </ul>
 <h2>Research Experience:</h2>
 <ul>
-  <li>2014.02 - 2018.06 Ph.D. student at National University of Defense Technology, China.</li>
-  <li>2015.10 - 2016.10 Visiting researcher at University College London, UK.</li>
+  <li>2014.02 - 2018.06 Ph.D. student at College of Computer, National University of Defense Technology, China, supervised by Prof. Kai Lu.</li>
+  <li>2015.10 - 2016.10 Visiting scholar at <a href="http://crest.cs.ucl.ac.uk/about/">CREST</a>, University College London, UK, supervised by Dr. <a href="http://www0.cs.ucl.ac.uk/staff/j.krinke/">Jens Krinke</a>.</li>
 </ul>
 <h2>Publications</h2>
 <p><strong><a href="usenix.pdf">How Double-Fetch Situations turn into Double-Fetch Vulnerabilities: A Study of Double Fetches in the Linux Kernel.</a></strong> [<a href="track1-double fetch.pptx"><strong>Slides</strong></a>]</p>
 Pengfei Wang, Jens Krinke, Kai Lu, Gen Li, Steve Dodier-Lazaro.
-<p>In proceedings of the 26th USENIX Security Symposium (USENIX Scurity '17). </p>
+<p>In proceedings of the 26th USENIX Security Symposium (USENIX Scurity '17). Vancouver, Aug. 2017.</p>
 <p><a href="JCST-1707-7817.R2.pdf"><strong>Untrusted Hardware Causes Double-fetch Problems in the I/O Memory</strong></a></p>
 <p> Kai Lu, Pengfei Wang, Gen Li, Xu Zhou.</p>
-<p>In Journal of Computer Science and Technology.</p>
+<p>In Journal of Computer Science and Technology. (To appear)</p>
 <p><a href="ccpe-published.pdf"><strong>A Survey of the Double-Fetch Vulnerabilities</strong></a></p>
 <p>Pengfei Wang, Kai Lu, Gen Li, Xu Zhou.</p>
-<p>In Concurrency and Computation: Practice and Experience</p>
+<p>In Concurrency and Computation: Practice and Experience (DOI 10.1002/cpe.4345)</p>
 <p><a href="fcs-final.pdf"><strong>DFTracker: Detecting Double-Fetch Bugs by Multi-Taints Parallel Tracking </strong></a></p>
 <p>Pengfei Wang, Kai Lu, Gen Li, Xu Zhou.</p>
-<p>In Frontier of Computer Science</p>
+<p>In Frontier of Computer Science (DOI 10.1007/s11704-016-6383-8 )</p>
 <h2>Reported Vulnerabilities</h2>
-<ul>
-  <li>CVE-2016-5728: </li>
-  <li>CVE-2016-6130:</li>
-  <li>CVE-2016-6136:</li>
-  <li>CVE-2016-6156:</li>
-  <li>CVE-2016-6480:</li>
-  <li>CVE-2017-8831: </li>
-  <li>CVE-2017-9984:</li>
-  <li>CVE-2017-9985:</li>
-  <li>CVE-2017-9986:</li>
-</ul>
-<p>&nbsp;</p>
-<p>(Last update by 2018-2-11)</p>
+<table width="898" border="1">
+  <tr>
+    <th width="135" scope="row">CVE-2016-5728</th>
+    <td width="747"><strong>A &quot;double-fetch&quot; vulnerability in the Linux kernel.</strong> Race condition in the vop_ioctl function allows local users to obtain sensitive information from kernel memory or cause a denial of service (memory corruption and system crash) by changing a certain header.</td>
+  </tr>
+  <tr>
+    <th scope="row">CVE-2016-6130</th>
+    <td><strong>A &quot;double-fetch&quot; vulnerability in the Linux kernel</strong>. Race condition in the sclp_ctl_ioctl_sccb function allows local users to obtain sensitive information from kernel memory by changing a certain length value.</td>
+  </tr>
+  <tr>
+    <th scope="row">CVE-2016-6136</th>
+    <td><strong>A &quot;double-fetch&quot; vulnerability in the Linux kernel.</strong> Race condition in the audit_log_single_ execve_arg function allows local users to bypass intended character-set restrictions or disrupt system-call auditing by changing a certain string.</td>
+  </tr>
+  <tr>
+    <th scope="row">CVE-2016-6156</th>
+    <td><strong>A &quot;double-fetch&quot; vulnerability in the Linux kernel.</strong> Race condition in the ec_device_ioctl_xcmd function allows local users to cause a denial of service (out-of-bounds array access) by changing a certain size value.</td>
+  </tr>
+  <tr>
+    <th scope="row">CVE-2016-6480</th>
+    <td><strong>A &quot;double-fetch&quot; vulnerability in the Linux kernel. </strong>Race condition in the ioctl_send_fib function allows local users to cause a denial of service (out-of-bounds access or system crash) by changing a certain size value.</td>
+  </tr>
+  <tr>
+    <th scope="row">CVE-2017-8831</th>
+    <td><strong>A &quot;hardware double-fetch&quot; vulnerability in the Linux kernel.</strong> Function saa7164_bus_get() allows local users to cause a denial of service (out-of-bounds array access) by changing a certain sequence-number value from the hardware.</td>
+  </tr>
+  <tr>
+    <th scope="row">CVE-2017-9984</th>
+    <td><strong>A &quot;hardware double-fetch&quot; vulnerability in the Linux kernel.</strong> Function snd_msnd_interrupt() allows local users to cause a denial of service (over-boundary access) by changing the value of a message queue head pointer.</td>
+  </tr>
+  <tr>
+    <th scope="row">CVE-2017-9985</th>
+    <td><strong>A &quot;hardware double-fetch&quot; vulnerability in the Linux kernel.</strong> Function snd_msndmidi_input_read() allows local users to cause a denial of service (over-boundary access) by changing the value of a message queue head pointer.</td>
+  </tr>
+  <tr>
+    <th scope="row">CVE-2017-9986</th>
+    <td><strong>A &quot;hardware double-fetch&quot; vulnerability in the Linux kernel.</strong> Function intr() allows local users to cause a denial of service (over-boundary access) by changing the value of a message queue head pointer.</td>
+  </tr>
+</table>
+<dl>
+  <dt>&nbsp;</dt>
+</dl>
+<p>(Last update: 2018-2-11)</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
